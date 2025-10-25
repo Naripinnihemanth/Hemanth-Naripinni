@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Yantramanav:wght@100;300;400;500;700;900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+  --logo: "Yrsa";
+  --title: "Exo 2";
+  --para: "Yantramanav";
+}
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 100%;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  text-align: center;
+}
+body {
+  background-color: black;
+}
