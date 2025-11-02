@@ -14,7 +14,7 @@ function Projects() {
           transition={{ duration: 1 }}
           className="card"
         >
-          <img src="/portfolioHome.jpg" alt="img" className="project-img" />
+          <img src="./portfolioHome.jpg" alt="img" className="project-img" />
           <h2 className="project-title">PortFolio</h2>
           <p className="project-description">
             The website highlights my technical expertise in front-end
