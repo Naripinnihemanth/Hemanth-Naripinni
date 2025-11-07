@@ -6,7 +6,6 @@ import App from "./App.jsx";
 import Empty from "./Components/Empty/Empty.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Route path="/" Component={App}></Route>
-    {/* <Route path="/QRcode" Component={QRcode}></Route> */}
+    <App></App>
   </StrictMode>
 );
