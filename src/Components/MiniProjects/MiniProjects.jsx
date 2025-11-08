@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./MiniProjects.css";
 import { motion } from "framer-motion";
 import { VscGithubInverted } from "react-icons/vsc";
+import { CiGlobe } from "react-icons/ci";
+import { div } from "framer-motion/client";
 
 function MiniProjects() {
   const [toggle, setToggle] = useState(false);
@@ -15,6 +17,7 @@ function MiniProjects() {
       name: "Accordion",
       gitLink: "https://github.com/Naripinnihemanth/Single-Accordian.git",
       img: "./AccordienHome.jpg",
+      site: "https://single-accordian.onrender.com",
       description:
         "A single accordion is a collapsible content component that allows users to expand or collapse one section of information at a time. It helps organize and display content in a compact, user-friendly way",
     },
@@ -23,6 +26,7 @@ function MiniProjects() {
       name: "Git users search",
       gitLink: "https://github.com/Naripinnihemanth/Git-Users.git",
       img: "./gitUsersHome.jpg",
+      site: "https://git-users.onrender.com",
       description:
         "The Git Users Search project is a web application that allows users to search for GitHub profiles by username using the GitHub API. It provides detailed information about each user, such as their profile picture, bio, repositories, followers, and following count. The app offers a clean and responsive interface, making it easy to explore GitHub users quickly and efficiently.",
     },
@@ -31,6 +35,7 @@ function MiniProjects() {
       name: "QR-code generator",
       gitLink: "https://github.com/Naripinnihemanth/QRCode.git",
       img: "./QRCodeHome.jpg",
+      site: "https://qrcode-zvgg.onrender.com",
       description:
         "The QR Code Generator is a React-based web application that allows users to generate QR codes instantly from any text or URL input. Built using the react-qrcode library, the app provides a simple, fast, and responsive interface where users can type or paste data and get a scannable QR code in real-time.",
     },
@@ -39,6 +44,7 @@ function MiniProjects() {
       name: "Tab manager",
       gitLink: "https://github.com/Naripinnihemanth/Tabs.git",
       img: "./TabsHome.jpg",
+      site: "https://tabs-j421.onrender.com",
       description:
         "The Tabs Manager project is a React-based web application that replicates the functionality of browser-like tabs (similar to Google Chrome). Users can create, switch between, and close multiple tabs seamlessly within the same interface. Each tab maintains its own content or state, offering an intuitive experience for multitasking or viewing different data simultaneously.",
     },
@@ -47,6 +53,7 @@ function MiniProjects() {
       name: "Scroll progress",
       gitLink: "https://github.com/Naripinnihemanth/Scroll-progress.git",
       img: "./ScrollProgressHome.jpg",
+      site: "https://scroll-progress.onrender.com",
       description:
         "The Scroll Progress Indicator is a React-based web project that visually tracks a user’s scroll position on a webpage. As the user scrolls down, a progress bar at the top (or side) dynamically fills, indicating how much of the page content has been viewed. This feature enhances user experience by providing a clear visual cue of reading progress.",
     },
@@ -55,6 +62,7 @@ function MiniProjects() {
       name: "Products loading",
       gitLink: "https://github.com/Naripinnihemanth/images-loading.git",
       img: "./MoreImagesHome.jpg",
+      site: "https://images-loading.onrender.com",
       description:
         "The Load More Products project is a React-based web application that displays a list of products with a “Load More” button to fetch and show additional items dynamically. Instead of loading all items at once, the app efficiently loads content in smaller batches, improving performance and user experience.",
     },
@@ -63,6 +71,7 @@ function MiniProjects() {
       name: "Random color generator",
       gitLink: "https://github.com/Naripinnihemanth/RandomColors.git",
       img: "./RandomColorHome.jpg",
+      site: "https://randomcolors.onrender.com",
       description:
         "The Random Color Generator is a React-based tool that produces one random color at a time and instantly displays its values in both RGB and HEX formats. Users can generate a new color with a single click (or keyboard shortcut), preview the color in a large swatch, and copy the RGB or HEX value to the clipboard for use in designs or code. The app is lightweight, responsive, and built to be easily dropped into any design workflow.",
     },
@@ -71,6 +80,7 @@ function MiniProjects() {
       name: "star ratting",
       gitLink: "https://github.com/Naripinnihemanth/Star-ratting.git",
       img: "./StarRatingHome.jpg",
+      site: "https://star-ratting.onrender.com",
       description:
         "The Star Rating System is a React-based interactive component that allows users to rate items (such as products, movies, or posts) using clickable star icons. When a user selects a star, all stars up to that point are highlighted, visually representing the rating. This project showcases user interaction, state management, and dynamic UI updates using React.",
     },
@@ -103,9 +113,15 @@ function MiniProjects() {
             >
               <VscGithubInverted />
             </a>
-            <div className="btn" onClick={() => HandleOnclick(item.id)}>
+            <div
+              className="btn mini-project-about"
+              onClick={() => HandleOnclick(item.id)}
+            >
               About
             </div>
+            <a href={item.site} target="blanck" className="live-site">
+              <CiGlobe />
+            </a>
           </motion.li>
         ))}
       </ul>

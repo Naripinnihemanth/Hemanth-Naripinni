@@ -12,7 +12,7 @@
 }
 .mini-project-container {
   width: 100%;
-  height: auto;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,11 +26,12 @@
   min-height: 50px;
   border: 0.5px solid white;
   display: grid;
-  grid-template-columns: 1fr 50px 100px;
+  grid-template-columns: 1fr 50px 100px 50px;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   padding: 10px;
+  gap: 10px;
   box-shadow: 0px 0px 5px white;
   overflow: hidden;
 }
@@ -53,8 +54,51 @@
 .project-item:hover .project-git-logo {
   visibility: visible;
 }
+.live-site {
+  font-size: 1.5rem;
+}
+.live-site:hover {
+  color: aqua;
+  filter: drop-shadow(0px 0px 15px aqua);
+}
+/* .mini-des-container {
+  position: absolute;
+  width: 100vw;
+  min-height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+} */
 @media screen and (max-width: 900px) {
   .project-git-logo {
     visibility: visible;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mini-project-wrapper {
+    padding: 3%;
+  }
+  .project-item {
+    grid-template-columns: 50px 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "T T T" "G L A";
+    gap: 10px;
+  }
+  .item-name {
+    grid-area: T;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .project-git-logo {
+    grid-area: G;
+  }
+  .live-site {
+    grid-area: L;
+    color: aqua;
+    filter: drop-shadow(0px 0px 15px aqua);
+  }
+  .mini-project-about {
+    grid-area: A;
   }
 }

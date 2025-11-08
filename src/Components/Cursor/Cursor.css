@@ -1,0 +1,10 @@
+.cursor {
+  position: absolute;
+  z-index: 99;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, aqua, blue);
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}

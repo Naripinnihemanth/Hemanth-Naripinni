@@ -23,6 +23,7 @@ a {
   height: 100vh;
   background-color: gray;
   text-align: center;
+  cursor: url("/cursor.png"), auto;
 }
 body {
   background-color: black;
