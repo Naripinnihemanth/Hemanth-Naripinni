@@ -13,9 +13,10 @@ function Nav() {
     const windowWidth = window.innerWidth;
     if (windowWidth >= 700) {
       setNavTogg(true);
+    } else {
+      setNavTogg(false);
     }
   }, []);
-
   return (
     <div className="navbar">
       <div className="name">
