@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(../../assets/HomeBackGround.png);
+  background: radial-gradient(circle at 50% -60%, #3797d9 20%, black 54% 100%);
   background-position: center;
 
   color: white;
