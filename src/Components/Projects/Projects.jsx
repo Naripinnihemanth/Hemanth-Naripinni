@@ -14,34 +14,40 @@ function Projects() {
           transition={{ duration: 1 }}
           className="card"
         >
-          <img src="./storeHome.jpg" alt="img" className="project-img" />
+          <img src="./ecom.png" alt="img" className="project-img" />
           <h2 className="project-title">E-Commerce site</h2>
           <p className="project-description">
-            This project is a fully responsive front-end e-commerce website
-            built using modern web technologies. It showcases the essential
-            features of an online shopping platform, including product listings,
-            and a shopping cart all implemented without a backend. All data is
-            managed using static JSON files.
+            Built a full-stack e-commerce platform using React.js for the
+            frontend and Django REST Framework for the backend, delivering a
+            scalable and responsive shopping experience. Developed secure
+            RESTful APIs for product management, user authentication, and cart
+            operations. Implemented JWT/session-based authentication for
+            protected access and smooth user login flows. Created a persistent
+            shopping cart system with dynamic state management to maintain cart
+            data across sessions. Integrated a machine learning recommendation
+            engine using nearest neighbor algorithms to generate personalized
+            product suggestions based on user behavior and preferences.
           </p>
           <ul className="tech-stack">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>React.js</li>
-            <li>ContextAPI</li>
             <li>Framer motion</li>
             <li>React-router-dom</li>
+            <li>Django Rest Framework</li>
+            <li>Postgresql</li>
           </ul>
           <div className="btn-container">
             <a
-              href="https://github.com/Naripinnihemanth/Cart-system.git"
+              href="https://github.com/Naripinnihemanth/E-commerce-frontend.git"
               target="blank"
               className="git-logo"
             >
               <VscGithubInverted />
             </a>
             <div className="btn">
-              <a href="https://store-xqlv.onrender.com" target="blank">
+              <a href="https://stockstream-82ao.onrender.com/" target="blank">
                 Live Site
               </a>
             </div>

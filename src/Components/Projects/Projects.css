@@ -11,18 +11,20 @@
 .card-container {
   color: white;
   /* border: 1px solid; */
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: start;
-  align-items: start;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 .card {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   width: clamp(300px, 30%, 30%);
@@ -90,13 +92,29 @@
   padding: 10px;
   box-shadow: 0px 0px 10px rgb(95, 131, 230);
 }
+@media screen and (max-width: 1100px) {
+  .card {
+    scale: 1;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 810px) {
+  .card {
+    scale: 1;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 700px) {
   .card {
     scale: 1;
   }
-  .project-container {
-    padding: 10%;
-  }
+
   .card-container {
     align-items: center;
     justify-content: center;
