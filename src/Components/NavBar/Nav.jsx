@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Profile from "../../assets/Profile.jpg";
+import Profile from "/profile.jpeg";
 import { motion } from "framer-motion";
 import "./Nav.css";
 import { AiOutlineImport } from "react-icons/ai";

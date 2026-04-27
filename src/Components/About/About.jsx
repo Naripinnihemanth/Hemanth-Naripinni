@@ -41,6 +41,24 @@ function About() {
       description:
         "Proficient in writing efficient SQL queries to extract, analyze, and manage data effectively. Skilled in database design, normalization, and optimization to ensure high performance and accuracy. Strong problem-solving ability in handling complex queries, joins, and subqueries for meaningful data insights and backend integration.",
     },
+    {
+      id: 7,
+      skill: "Java",
+      description:
+        "Strong foundation in core Java with hands-on experience in object-oriented programming, collections framework, multithreading, exception handling, file handling, and JDBC. Skilled in writing clean, efficient, and maintainable backend code for scalable applications.",
+    },
+    {
+      id: 8,
+      skill: "Spring Boot",
+      description:
+        "Experienced in developing production-ready RESTful web applications using Spring Boot. Proficient in building microservices, dependency injection, API development, configuration management, and integrating databases using Spring Data JPA.",
+    },
+    {
+      id: 9,
+      skill: "Spring Security",
+      description:
+        "Hands-on experience implementing secure authentication and authorization using Spring Security. Skilled in JWT-based authentication, role-based access control, session management, password encryption, and securing REST APIs from unauthorized access.",
+    },
   ];
   const [toggle, setToggle] = useState(false);
   const [desc, setDesc] = useState("");

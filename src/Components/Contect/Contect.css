@@ -91,11 +91,12 @@
   width: 100%;
   min-height: 50vh;
   /* border: 1px solid white; */
-  background: url(/Profile-contects.jpg);
+  background: url(/contect_bg.jpeg);
   /* backdrop-filter: blur(8px); */
   border-radius: 15px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   /* object-fit: cover; */
   display: flex;
   flex-direction: column;

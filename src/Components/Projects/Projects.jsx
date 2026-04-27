@@ -36,6 +36,7 @@ function Projects() {
             <li>Framer motion</li>
             <li>React-router-dom</li>
             <li>Django Rest Framework</li>
+            <li>Machine Learning</li>
             <li>Postgresql</li>
           </ul>
           <div className="btn-container">
